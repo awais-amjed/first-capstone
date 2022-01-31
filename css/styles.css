@@ -1,0 +1,13 @@
+:root {
+  --cocogoose: 'COCOGOOSE', sans-serif;
+  --lato: 'Lato', sans-serif;
+  --dark-bg: #272a31;
+  --orange: #ec5242;
+  --grey: #d3d3d3;
+}
+
+* {
+  font-family: var(--lato);
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
