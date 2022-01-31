@@ -28,6 +28,10 @@ a {
   color: black;
 }
 
+#navbar a:hover {
+  color: var(--dark-grey);
+}
+
 .navbar-content {
   display: flex;
   align-items: center;
@@ -72,8 +76,4 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.mobile-navbar-menu-content a:hover {
-  color: var(--dark-grey);
 }
