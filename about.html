@@ -25,7 +25,19 @@
     <header>
         <nav id="navbar">
             <div class="navbar-content">
-                <a href="" id="navbar-open-button"><i class="fas fa-bars fa-lg"></i></a>
+                <div class="mobile-navbar">
+                    <a href="" id="navbar-open-button"><i class="fas fa-bars fa-lg"></i></a>
+                </div>
+
+                <div class="desktop-navbar">
+                    <ul>
+                        <li><a href="#"><img src="images/logo.png" alt="Logitech G" height="30"></a></li>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </ul>
+                </div>
             </div>
 
             <div class="mobile-navbar-menu">
@@ -36,8 +48,8 @@
                         <a href="#"><img src="images/logo.png" alt="Logitech G" height="30"></a>
                     </div>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
             </div>
@@ -71,8 +83,8 @@
                 <hr>
             </div>
             <p>Take a look two of our top products</p>
-            <ul class="row">
-                <li>
+            <ul class="row gap-4 gap-md-0">
+                <li class="col-12 col-md-6">
                     <div class="product-card">
                         <img
                              src="https://resource.logitechg.com/w_1800,c_limit,f_auto,q_auto,f_auto,dpr_auto/d_transparent.gif/content/dam/gaming/en/products/pro-wireless-gaming-mouse/pro-wireless-feature-2-desktop.png?v=1"
@@ -83,7 +95,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="col-12 col-md-6">
                     <div class="product-card">
                         <img
                             src="https://resource.logitechg.com/w_1800,c_limit,f_auto,q_auto,f_auto,dpr_auto/d_transparent.gif/content/dam/gaming/en/products/pro-wireless-gaming-mouse/pro-wireless-feature-2-desktop.png?v=1"

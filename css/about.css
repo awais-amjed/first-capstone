@@ -2,6 +2,8 @@
 
 #headline {
   background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
 }
 
 .headline-content {
@@ -46,6 +48,11 @@
   position: relative;
   color: white;
   margin-block: 10px;
+  height: 100%;
+}
+
+.product-card:hover {
+  cursor: pointer;
 }
 
 .product-card h3 {
@@ -68,6 +75,8 @@
   align-items: center;
   gap: 10px;
   padding: 70px;
+  height: 100%;
+  text-align: center;
 }
 
 #awards {
@@ -78,4 +87,10 @@
   justify-content: center;
   background-color: var(--dark-bg);
   color: white;
+}
+
+@media (min-width: 768px) {
+  #awards img {
+    content: url('https://resource.logitechg.com/w_1800,c_limit,f_auto,q_auto,f_auto,dpr_auto/d_transparent.gif/content/dam/gaming/en/about/about-game-accolade-logo-desktop.png?v=1');
+  }
 }
