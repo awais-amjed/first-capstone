@@ -39,12 +39,20 @@ header {
   color: var(--text-color);
 }
 
+.mobile-navbar-menu a {
+  color: white;
+}
+
 #navbar a:hover {
   color: var(--active-color);
 }
 
+#navbar .mobile-navbar-menu a:hover {
+  color: #c7c2c2;
+}
+
 .navbar-content {
-  background-color: whitesmoke;
+  background-color: white;
   display: flex;
   align-items: center;
   padding: 0 var(--padding-x);
@@ -52,6 +60,7 @@ header {
   height: 50px;
   position: fixed;
   z-index: 10;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 .mobile-navbar-menu {
@@ -101,6 +110,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.about-button {
+  color: var(--orange);
+  padding: 6px 15px;
+  border: 3px var(--orange) solid;
+  transition: 300ms;
+}
+
+.about-button:hover {
+  border-color: var(--text-color);
 }
 
 #headline {
