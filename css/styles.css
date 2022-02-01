@@ -128,7 +128,8 @@ header {
   font-family: var(--cocogoose);
 }
 
-#highlights {
+#highlights,
+#gallery {
   padding: 50px 5%;
   display: flex;
   flex-direction: column;
@@ -138,7 +139,9 @@ header {
   color: white;
 }
 
-#highlights .sub-heading {
+#highlights .sub-heading,
+#features .sub-heading,
+#gallery .sub-heading {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,6 +150,7 @@ header {
 .sub-heading hr {
   color: var(--orange);
   width: 50px;
+  height: 2px;
 }
 
 .highlights-card {
@@ -189,4 +193,71 @@ header {
 
 .highlights-card .half-wrapper h3 {
   flex-basis: 60%;
+}
+
+#features,
+#footer {
+  padding: 50px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card {
+  display: flex;
+  gap: 10px;
+}
+
+.feature-img {
+  min-width: 95px;
+}
+
+.feature-img-content {
+  position: relative;
+}
+
+.feature-img-bg {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.feature-img-top {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  object-position: top;
+}
+
+.feature-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feature-description p {
+  font-size: 0.9rem;
+}
+
+.feature-card .feature-description h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer-content {
+  display: flex;
+}
+
+#footer .footer-content img {
+  max-width: 300px;
+  object-fit: contain;
+}
+
+.footer-content p {
+  font-size: 0.8rem;
 }
