@@ -101,11 +101,17 @@ header {
   gap: 40px;
 }
 
+.headline-content p {
+  font-size: 0.93rem;
+}
+
 .headline-bg {
   position: absolute;
   z-index: -1;
   opacity: 0.1;
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .headline-content h1 {
@@ -122,7 +128,7 @@ header {
   font-family: var(--cocogoose);
 }
 
-#main-features {
+#highlights {
   padding: 50px 5%;
   display: flex;
   flex-direction: column;
@@ -132,18 +138,18 @@ header {
   color: white;
 }
 
-#main-features .sub-heading {
+#highlights .sub-heading {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#main-features .sub-heading hr {
+.sub-heading hr {
   color: var(--orange);
   width: 50px;
 }
 
-.main-feature-card {
+.highlights-card {
   margin: 10px 0;
   padding: 10px 15px;
   display: flex;
@@ -152,18 +158,21 @@ header {
   gap: 15px;
 }
 
-.main-feature-card h3 {
-  font-size: 1rem;
+.highlights-card h3 {
+  font-size: 0.95rem;
   font-weight: bold;
   color: var(--orange);
 }
 
-.main-feature-card p {
+.highlights-card p {
   flex-basis: 60%;
+  font-size: 0.9rem;
 }
 
-.main-feature-card img {
+.highlights-card img {
   object-fit: contain;
+  width: 50px;
+  height: 50px;
 }
 
 .half-wrapper {
@@ -174,6 +183,10 @@ header {
   gap: 15px;
 }
 
-.main-feature-card .half-wrapper > * {
-  flex-basis: 50%;
+.highlights-card .half-wrapper img {
+  flex-basis: 40%;
+}
+
+.highlights-card .half-wrapper h3 {
+  flex-basis: 60%;
 }
