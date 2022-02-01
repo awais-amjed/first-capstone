@@ -117,15 +117,21 @@ header {
 .headline-content h1 {
   color: var(--orange);
   font-family: var(--cocogoose);
+  font-size: 2rem;
 }
 
 .headline-content span {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--orange);
 }
 
 #headline .sub-heading h4 {
+  font-size: 1.5rem;
   font-family: var(--cocogoose);
+}
+
+#headline .sub-heading p {
+  font-size: 1rem;
 }
 
 #highlights,
@@ -154,10 +160,11 @@ header {
 }
 
 .highlights-card {
-  margin: 10px 0;
   padding: 10px 15px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 100%;
   background-color: rgba(101, 98, 98, 0.5);
   gap: 15px;
 }
@@ -168,7 +175,7 @@ header {
   color: var(--orange);
 }
 
-.highlights-card p {
+#highlights .highlights-card p {
   flex-basis: 60%;
   font-size: 0.9rem;
 }
@@ -240,7 +247,7 @@ header {
   gap: 10px;
 }
 
-.feature-description p {
+#features .feature-description p {
   font-size: 0.9rem;
 }
 
@@ -258,7 +265,7 @@ header {
   object-fit: contain;
 }
 
-.footer-content p {
+#footer .footer-content p {
   font-size: 0.8rem;
 }
 
@@ -285,5 +292,14 @@ header {
 
   #headline .sub-heading p {
     font-size: 1.2rem;
+  }
+
+  .highlights-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .highlights-card .half-wrapper {
+    flex-direction: column;
   }
 }
