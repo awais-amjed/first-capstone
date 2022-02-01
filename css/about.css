@@ -1,0 +1,70 @@
+@import "styles.css";
+
+#headline {
+  background-color: whitesmoke;
+}
+
+.headline-content {
+  text-align: center;
+}
+
+.headline-content > p {
+  padding: 15px;
+  background-color: white;
+}
+
+.headline-content .sub-heading a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#more-products {
+  padding: 50px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#more-products .sub-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card .product-description p {
+  font-size: 0.9rem;
+  margin: unset;
+}
+
+#more-products > p {
+  margin-bottom: 30px;
+}
+
+.product-card {
+  position: relative;
+  color: white;
+  margin-block: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.8rem;
+  font-family: var(--cocogoose);
+}
+
+.product-card img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-description {
+  background-color: rgba(236, 82, 66, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 70px;
+}
