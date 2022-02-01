@@ -93,7 +93,7 @@ header {
 }
 
 .headline-content {
-  padding: 50px 5%;
+  padding: 50px var(--padding);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -116,7 +116,7 @@ header {
 
 .headline-content h1 {
   color: var(--orange);
-  font-family: var(--cocogoose) !important;
+  font-family: var(--cocogoose);
 }
 
 .headline-content span {
@@ -130,7 +130,7 @@ header {
 
 #highlights,
 #gallery {
-  padding: 50px 5%;
+  padding: 50px var(--padding);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -197,7 +197,7 @@ header {
 
 #features,
 #footer {
-  padding: 50px 5%;
+  padding: 50px var(--padding);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -260,4 +260,30 @@ header {
 
 .footer-content p {
   font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --padding: 10%;
+  }
+
+  .headline-content {
+    max-width: 80%;
+  }
+
+  .headline-content h1 {
+    font-size: 3rem;
+  }
+
+  .headline-content span {
+    font-size: 1.8rem;
+  }
+
+  #headline .sub-heading h4 {
+    font-size: 2rem;
+  }
+
+  #headline .sub-heading p {
+    font-size: 1.2rem;
+  }
 }
