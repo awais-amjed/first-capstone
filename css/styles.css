@@ -157,6 +157,7 @@ header {
   color: var(--orange);
   width: 50px;
   height: 2px;
+  margin-bottom: 50px;
 }
 
 .highlights-card {
