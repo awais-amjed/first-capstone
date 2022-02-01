@@ -1,13 +1,23 @@
 const mobileNavbarMenu = document.querySelector('.mobile-navbar-menu');
+const meow = document.querySelectorAll('.mobile-navbar-menu > *');
 
 document.getElementById('navbar-open-button').addEventListener('click', (event) => {
   event.preventDefault();
+  meow.forEach((child) => {
+    child.classList.remove('animate__slideOutRight');
+    child.classList.add('animate__slideInRight');
+  });
   mobileNavbarMenu.style.display = 'block';
+  document.body.style.overflow = 'hidden';
 });
 
 document.getElementById('navbar-close-button').addEventListener('click', (event) => {
   event.preventDefault();
-  mobileNavbarMenu.style.display = 'none';
+  meow.forEach((child) => {
+    child.classList.remove('animate__slideInRight');
+    child.classList.add('animate__slideOutRight');
+  });
+  document.body.style.overflow = 'auto';
 });
 
 const features = [
@@ -55,21 +65,23 @@ const features = [
 const featuresList = document.querySelector('#features ul');
 
 features.forEach((feature) => {
-  featuresList.innerHTML += `
-    <li class="col-12 col-md-6 mt-md-4">
-      <div class="feature-card">
-          <div class="feature-img-content">
-              <img class="feature-img-bg" src="../images/features/boxes.png" alt="">
-              <img class="feature-img-top"
-                   src="${feature.imageURL}"
-                   alt="">
-          </div>
-          <div class="feature-img"></div>
-          <div class="feature-description">
-              <h3>${feature.title}</h3>
-              <p>${feature.description}</p>
-          </div>
-      </div>
-    </li>
+  const node = document.createElement('li');
+  node.classList.add('col-12', 'col-md-6', 'mt-md-4');
+  node.id = feature.title;
+  node.innerHTML = `
+    <div class="feature-card">
+        <div class="feature-img-content">
+            <img class="feature-img-bg" src="../images/features/boxes.png" alt="">
+            <img class="feature-img-top"
+                 src="${feature.imageURL}"
+                 alt="">
+        </div>
+        <div class="feature-img"></div>
+        <div class="feature-description">
+            <h3>${feature.title}</h3>
+            <p>${feature.description}</p>
+        </div>
+    </div>
   `;
+  featuresList.appendChild(node);
 });

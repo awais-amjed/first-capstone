@@ -49,10 +49,12 @@
   color: white;
   margin-block: 10px;
   height: 100%;
+  transition: 0.3s;
 }
 
 .product-card:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .product-card h3 {
@@ -87,6 +89,14 @@
   justify-content: center;
   background-color: var(--dark-bg);
   color: white;
+}
+
+#awards img {
+  transition: 0.3s;
+}
+
+#awards img:hover {
+  transform: scale(1.1);
 }
 
 @media (min-width: 768px) {

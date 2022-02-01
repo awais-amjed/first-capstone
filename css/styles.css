@@ -55,6 +55,7 @@ header {
 
 .mobile-navbar-menu {
   display: none;
+  overflow-y: hidden;
 }
 
 .desktop-navbar {
@@ -166,6 +167,14 @@ header {
   align-items: center;
 }
 
+#gallery img {
+  transition: 0.3s;
+}
+
+#gallery img:hover {
+  transform: scale(1.5);
+}
+
 .sub-heading hr {
   color: var(--orange);
   width: 50px;
@@ -181,6 +190,12 @@ header {
   height: 100%;
   background-color: rgba(101, 98, 98, 0.5);
   gap: 15px;
+  transition: 0.3s;
+}
+
+.highlights-card:hover,
+.feature-card:hover {
+  transform: scale(1.05);
 }
 
 .highlights-card h3 {
@@ -194,7 +209,7 @@ header {
   font-size: 0.9rem;
 }
 
-.highlights-card img {
+#highlights .highlights-card img {
   object-fit: contain;
   width: 50px;
   height: 50px;
@@ -208,7 +223,7 @@ header {
   gap: 15px;
 }
 
-.highlights-card .half-wrapper img {
+#highlights .half-wrapper img {
   flex-basis: 40%;
 }
 
@@ -225,26 +240,10 @@ header {
   justify-content: center;
 }
 
-#features li {
-  animation-name: meow;
-  animation-duration: 1s;
-}
-
-@keyframes meow {
-  from {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.feature-card {
+#features .feature-card {
   display: flex;
   gap: 10px;
+  transition: 0.3s;
 }
 
 .feature-img {
