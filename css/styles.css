@@ -225,13 +225,30 @@ header {
   justify-content: center;
 }
 
+#features li {
+  animation-name: meow;
+  animation-duration: 1s;
+}
+
+@keyframes meow {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .feature-card {
   display: flex;
   gap: 10px;
 }
 
 .feature-img {
-  min-width: 95px;
+  min-width: 125px;
 }
 
 .feature-img-content {
@@ -249,8 +266,8 @@ header {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
   object-position: top;
 }
