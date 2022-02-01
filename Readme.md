@@ -6,7 +6,7 @@
 
 <p style="display: flex; align-items: start; gap: 10px">
   <img src="/images/desktop-screenshot.png" width="70%" />
-  <img src="/images/mobile-screenshot.png" width="30%" />
+  <img src="/images/mobile-screenshot.png" width="21%" />
 </p>
 
 This website is a product page for Logitech's cutting edge Keyboard "G 915" with a mix of CC Global Summit 2015 theme by Cindy Shin.
@@ -17,7 +17,7 @@ This website is a product page for Logitech's cutting edge Keyboard "G 915" with
 
 ## Live Demo
 
-[Live Demo Link](https://awais-amjed.github.io/Portfolio/)
+[Live Demo Link](https://awais-amjed.github.io/first-capstone/)
 
 ## Getting Started
 
