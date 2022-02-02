@@ -81,10 +81,10 @@ features.forEach((feature) => {
   node.innerHTML = `
     <div class="feature-card">
         <div class="feature-img-content">
-            <img class="feature-img-bg" src="../images/features/boxes.png" alt="${feature.title}">
+            <img class="feature-img-bg" src="images/features/boxes.png" alt="">
             <img class="feature-img-top"
                  src="${feature.imageURL}"
-                 alt="">
+                 alt="${feature.title}">
         </div>
         <div class="feature-img"></div>
         <div class="feature-description">

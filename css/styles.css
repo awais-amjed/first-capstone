@@ -124,6 +124,7 @@ header {
 }
 
 #headline {
+  position: relative;
   color: var(--text-color);
 }
 
@@ -337,6 +338,10 @@ header {
 
   .navbar-content {
     height: 60px;
+  }
+
+  .headline-bg {
+    content: url('../images/bg-desktop.png');
   }
 
   .headline-content {
