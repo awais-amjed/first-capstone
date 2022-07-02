@@ -40,7 +40,6 @@ Open index.html in Chrome
 👤 **Author1**
 
 - GitHub: [Awais Amjed](https://github.com/awais-amjed)
-- Website: [Coding Fries](https://codingfries.com)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/awais-amjed)
 
 ## 🤝 Contributing
@@ -56,5 +55,5 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
-- Cindy Shin
-- Creative Commons Korea
+- [Design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) by [Cindy Shin](https://www.behance.net/adagio07)
+- [Creative Commons License](https://creativecommons.org/licenses/by-nc/4.0/)
